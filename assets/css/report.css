@@ -1,0 +1,29 @@
+.reporte
+{
+	margin:20px 20px 0;
+	padding:0 0 20px;
+}
+.section_break h3
+{
+	font-size:110%;
+	font-weight:400;
+	line-height:130%;
+	margin:0 0 2px;
+}
+
+.section_break p
+{
+	font-size:85%;
+
+	margin:0 0 10px;
+}
+
+li.section_break
+{
+	border-top:1px dotted #ccc;
+	margin-top:9px;
+	padding-bottom:0;
+	padding-left:9px;
+	padding-top:13px;
+	width:97% !important;
+}
