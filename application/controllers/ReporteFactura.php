@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class ReporteFactura extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
-	    $this->load->model("ReporteFactura_model");
+	    $this->load->model('ReporteFacturas_model');
 	}
 
 	function index(){
@@ -14,7 +14,7 @@ class ReporteFactura extends CI_Controller {
 	public function DetalleReporteFactura(){
 		$num_fac = $this->input->post("num_fac");
 
-		$resultado = $this->ReporteFactura_model->DetalleReporteFactura($num_fac);
+		$resultado = $this->ReporteFacturas_model->DetalleReporteFactura($num_fac);
 		echo json_encode($resultado);
 	}
 
@@ -25,9 +25,9 @@ class ReporteFactura extends CI_Controller {
 		$data_menu = array(
 			'menu' => $menu_session
 		);
-		
+
 		$data = array(
-			'lista_reportefactura_Existente' => $this->ReporteFactura_model->ReporteFacturaExistente(),
+			'lista_reportefactura_Existente' => $this->ReporteFacturas_model->ReporteFacturasExistente(),
 			'reporte_html' => $this->load->view('reports/reporte_factura', NULL, TRUE)
 		);
 		log_message("debug", "**** ReporteConsulta - cargarVistaDatos - ". $data['reporte_html'] );
