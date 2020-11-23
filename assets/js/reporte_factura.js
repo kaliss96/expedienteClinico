@@ -19,13 +19,14 @@ $(document).on('ready', function (){
 		let reporte = lista_reportefactura_Existente.find(i => i.id == _id);	
 		console.log('reporte', reporte.id);
 
-		consultarDetalleCitaMedica(reporte.id);
+		consultarDetalleFactura(reporte.id);
 
 		$('#tpl_rp_fecha').html(reporte.fecha_registro);
 		$('#tpl_rp_paciente_nombre').html(
 			reporte.nombre_paciente + ' ' + reporte.apellido_paciente
 		);	
 		$('#tpl_rp_paciente_contado').html(reporte.contado);	
+		$('#tpl_rp_especialidad_consulta').html(reporte.especialidad_consulta);	
 		$('#tpl_rp_paciente_precio_consulta').html(reporte.precio_consulta);
 		$('#tpl_rp_paciente_cambio').html(reporte.cambio);
 		$('#tpl_rp_paciente_total').html(reporte.total);
@@ -38,7 +39,7 @@ $(document).on('ready', function (){
 		$.ajax({
 			type: "POST",
 			dataType: "JSON",
-			data: {id:num_exp},
+			data: {id:num_fac},
 			url: "ReporteFactura/DetalleFactura"
 		})
 		.done(function(_res){

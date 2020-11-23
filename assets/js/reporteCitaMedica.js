@@ -12,16 +12,17 @@ $(document).on('ready', function (){
 		popupWin.document.write(toPrint[0].innerHTML);
 		popupWin.document.close();
 		popupWin.print();
-		popupWin.close();	
+		popupWin.close();
 	}
 
-	function VerReporte(_id){	
+	function VerReporte(_id){
 		let reporte = lista_reporteCitaMedica_Existente.find(i => i.id == _id);	
 		console.log('reporte', reporte.id);
 
 		consultarDetalleCitaMedica(reporte.id);
 
 		$('#tpl_rp_fecha').html(reporte.fecha_registro);
+		console.log('fecha',reporte.fecha_registro);
 		$('#tpl_rp_paciente_nombre').html(
 			reporte.nombre_paciente + ' ' + reporte.apellido_paciente
 		);	
@@ -46,7 +47,6 @@ $(document).on('ready', function (){
 		.done(function(_res){
 			// Success
 			console.log('ajax', _res);
-			
 		})
 		.fail(function(e){
 			// Error
