@@ -14,7 +14,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;"></th>
 			<td style="border:0px; text-align: right">
-				Fecha <span id="tpl_rp_fecha" name="fecha_registro" style="border-bottom: 1px solid black;">2017/04/12</span>			
+				Fecha <span style="border-bottom: 1px solid black;"><?php echo date('d-m-Y');?></span>
 			</td>
 		</tr>
 
@@ -45,7 +45,7 @@
 		<br><br>
 		<br><br>
 
-	<table style="margin: 0 auto;" width="80%" cellspacing="1px" border="1px">	
+	<table style="margin: 0 auto;" width="80%" cellspacing="1px" border="1px">
 		<tr style="height: 45px; ">
 			<th style="border:0px;">FECHA CITA RESERVA</th>
 			<th style="border:0px;">FECHA CITA MÉDICA</th>
@@ -63,13 +63,13 @@
 
 		<br><br>
 		<table style="margin: 0 auto;" width="80%">	
-		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">DESCRIPCIÓN:</th>
-			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_descripcion"></textarea>
-				<hr color="black" size="1">
-		</td>
-		</tr>
-	</table>
+			<tr style="height: 45px; ">
+				<th style="border:0px; text-align: left; width:25%;">DESCRIPCIÓN:</th>
+					<td style="border:0px;">
+						<textarea id="tpl_rp_paciente_descripcion" disabled="true"></textarea>
+						<hr color="black" size="1">
+					</td>
+			</tr>
+		</table>
 </table>
 

@@ -4,6 +4,7 @@
     	margin-bottom: 0px!important;
 	}
 </style>
+
 <div style="border:double; margin: 0 auto; padding: 20px 0 40px 0;">
 	<div style="text-align: center">
 		<h1 style="margin-top: 0!important;">EXPEDIENTE CLÍNICO ELÉCTRONICO</h1>
@@ -14,7 +15,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;"></th>
 			<td style="border:0px; text-align: right">
-				Fecha <span id="tpl_rp_fecha" name="fecha_registro" style="border-bottom: 1px solid black;">2017/04/12</span>			
+				Fecha <span style="border-bottom: 1px solid black;"><?php echo date('d-m-Y');?></span>
 			</td>
 		</tr>
 
@@ -27,35 +28,26 @@
 		</tr>
 
 		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">CONTADO:</th>
+			<th style="border:0px; text-align: left; width:25%;">CEDULA:</th>
 			<td style="border:0px;">
-				<label id="tpl_rp_paciente_contado"></label>
+				<label id="tpl_rp_paciente_cedula"></label>
 				<hr color="black" size="1">
 			</td>
 		</tr>
 
 		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">PRECIO CONSULTA:</th>
+			<th style="border:0px; text-align: left; width:25%;">PROBLEMAS EMBARAZO:</th>
 			<td style="border:0px;">
-				<label id="tpl_rp_paciente_precio_consulta"></label>
+				<label id="tpl_rp_paciente_problema_embarazo"></label>
 				<hr color="black" size="1">
 			</td>
 		</tr>
 
 		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">PRECIO CAMBIO:</th>
+			<th style="border:0px; text-align: left; width:25%;">DESCRIPCION:</th>
 			<td style="border:0px;">
-				<label id="tpl_rp_paciente_cambio"></label>
-				<hr color="black" size="1">
-			</td>
-		</tr>
-
-		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">TOTAL:</th>
-			<td style="border:0px;">
-				<label id="tpl_rp_paciente_total"></label>
+				<label id="tpl_rp_paciente_descripcion"></label>
 				<hr color="black" size="1">
 			</td>
 		</tr>
 	</table>
-

@@ -14,7 +14,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;"></th>
 			<td style="border:0px; text-align: right">
-				Fecha <span id="tpl_rp_fecha" name="fecha_registro" style="border-bottom: 1px solid black;">2017/04/12</span>			
+				Fecha <span style="border-bottom: 1px solid black;"><?php echo date('d-m-Y');?></span>	
 			</td>
 		</tr>
 
@@ -133,7 +133,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">EVOLUCIÓN:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_evolucion"></textarea>
+				<textarea id="tpl_rp_evolucion" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -141,7 +141,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">SINTOMAS:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_sintomas"></textarea>
+				<textarea id="tpl_rp_sintomas" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -149,7 +149,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">ENFERMEDAD:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_enfermedad"></textarea>
+				<textarea id="tpl_rp_enfermedad" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -157,7 +157,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">DETALLE ENFERMEDAD:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_detalle_enfermedad"></textarea>
+				<textarea id="tpl_rp_detalle_enfermedad" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -165,7 +165,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">TRATAMIENTO:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_tratamiento"></textarea>
+				<textarea id="tpl_rp_tratamiento" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>

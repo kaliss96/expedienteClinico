@@ -20,91 +20,88 @@
 				</div>
 			<?php } ?>
 
-<table class="table">
-	<tbody>					
-		<tr>
-			<td>
-				<div class="form-group">
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalFabricante">
-						<i class="fa fa-plus"></i>
-						Fabricante
-					</button>
-				</div>
-			</td>
+		<table class="table">
+			<tbody>					
+				<tr>
+					<td>
+						<div class="form-group">
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalFabricante">
+								<i class="fa fa-plus"></i>
+								Fabricante
+							</button>
+						</div>
+					</td>
 
-	<table id="fabricante" class="table table-hover table-bordered table-striped table-condensed">
-		<thead>
-			<tr>
-				<th>Fecha Registro</th>
-				<th>Fabricante</th>
-				<th>Estado</th>
-				<th>Acciones</th>
+			<table id="fabricante" class="table table-hover table-bordered table-striped table-condensed">
+				<thead>
+					<tr>
+						<th>Fecha Registro</th>
+						<th>Fabricante</th>
+						<th>Estado</th>
+						<th>Acciones</th>
+					</tr>
+				</thead>
+				<tbody>	
+
+						<?php foreach ($lista_fabricante as $fila) { ?>
+						<tr class="<?php echo $fila->estado == 'INACTIVO' ? 'danger' : '' ?>">
+						<td><?= $fila->fecha_registro;?></td>
+						<td><?= $fila->fabricante;?></td>
+						<td>
+					  <?php if ($fila->estado == 'ACTIVO') {
+						  echo '<label class="label label-success">activo</label>';
+						}
+						else {
+						  echo '<label class="label label-danger">inactivo</label>';
+						}?>
+					  </td>
+					<td>
+					  <button class="btn btn-info btn-xs" onclick="editarFabricante(<?php echo $fila->id_fabricante ?>)"><span class="fa fa-pencil"></span></button>
+					  </td>
+						</tr>
+						<?php } ?>
+				  </tbody>
+			</table>			
+					<td>
+						<div class="form-group">
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLaboratorio">
+								<i class="fa fa-plus"></i>
+								Laboratorio
+							</button>
+						</div>
+					</td>
+			<table id="laboratorio" class="table table-hover table-bordered table-striped table-condensed">
+				<thead>
+					<tr>
+						<th>Fecha Registro</th>
+						<th>Laboratorio</th>
+						<th>Estado</th>
+						<th>Acciones</th>
+					</tr>
+				</thead>
+				<tbody>
+					<?php foreach ($lista_laboratorio as $fila) { ?>
+						<tr class="<?php echo $fila->estado == 'INACTIVO' ? 'danger' : '' ?>">
+							<td><?= $fila->fecha_registro;?></td>
+							<td><?= $fila->laboratorio;?></td>
+							<td>
+							<?php if ($fila->estado == 'ACTIVO') {
+								echo '<label class="label label-success">activo</label>';
+							}
+							else {
+							  echo '<label class="label label-danger">inactivo</label>';
+							}?>
+						  	</td>
+							<td>
+							  <button class="btn btn-info btn-xs" onclick="editarLaboratorio(<?php echo $fila->id_laboratorio ?>)"><span class="fa fa-pencil"></span></button>
+							</td>
+						</tr>
+					<?php } ?>
+				</tbody>
+			</table>
 			</tr>
-		</thead>
-		<tbody>	
-
-				<?php foreach ($lista_fabricante as $fila) { ?>
-				<tr class="<?php echo $fila->estado == 'INACTIVO' ? 'danger' : '' ?>">
-				<td><?= $fila->fecha_registro;?></td>
-				<td><?= $fila->fabricante;?></td>
-				<td>
-			  <?php if ($fila->estado == 'ACTIVO') {
-				  echo '<label class="label label-success">activo</label>';
-				}
-				else {
-				  echo '<label class="label label-danger">inactivo</label>';
-				}?>
-			  </td>
-			<td>
-			  <button class="btn btn-info btn-xs" onclick="editarFabricante(<?php echo $fila->id_fabricante ?>)"><span class="fa fa-pencil"></span></button>
-			  </td>
-				</tr>
-				<?php } ?>
-		  </tbody>
-	</table>			
-			<td>
-				<div class="form-group">
-					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLaboratorio">
-						<i class="fa fa-plus"></i>
-						Laboratorio
-					</button>
-				</div>
-			</td>
-
-<table id="laboratorio" class="table table-hover table-bordered table-striped table-condensed">
-	<thead>
-		<tr>
-			<th>Fecha Registro</th>
-			<th>Laboratorio</th>
-			<th>Estado</th>
-			<th>Acciones</th>
-		</tr>
-	</thead>
-	<tbody>	
-
-			<?php foreach ($lista_laboratorio as $fila) { ?>
-			<tr class="<?php echo $fila->estado == 'INACTIVO' ? 'danger' : '' ?>">
-			<td><?= $fila->fecha_registro;?></td>
-			<td><?= $fila->laboratorio;?></td>
-			<td>
-		  <?php if ($fila->estado == 'ACTIVO') {
-			  echo '<label class="label label-success">activo</label>';
-			}
-			else {
-			  echo '<label class="label label-danger">inactivo</label>';
-			}?>
-		  </td>
-			<td>
-		  <button class="btn btn-info btn-xs" onclick="editarLaboratorio(<?php echo $fila->id_laboratorio ?>)"><span class="fa fa-pencil"></span></button>
-		  </td>
-			</tr>
-			<?php } ?>
-	  </tbody>
-</table>			
-		</tr>			
-	</tbody>				
-</table>
-
+		</tbody>				
+		</table>
 
 	<div class="form-group">
 		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalMarca">

@@ -14,7 +14,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;"></th>
 			<td style="border:0px; text-align: right">
-				Fecha <span id="tpl_rp_fecha" name="fecha_registro" style="border-bottom: 1px solid black;">2017/04/12</span>			
+				Fecha <span style="border-bottom: 1px solid black;"><?php echo date('d-m-Y');?></span>
 			</td>
 		</tr>
 
@@ -77,7 +77,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">COMPLICACIONES ENFERMEDAD:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_complicaciones"></textarea>
+				<textarea id="tpl_rp_paciente_complicaciones" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -85,7 +85,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">EXAMENES REALIZADOS:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_examenes_realizados"></textarea>
+				<textarea id="tpl_rp_paciente_examenes_realizados" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -93,7 +93,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">TRATAMIENTOS RECIBIDOS:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_tratamientos_recibidos"></textarea>
+				<textarea id="tpl_rp_paciente_tratamientos_recibidos" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -101,7 +101,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">DIAGNÓSTICO INGRESO:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_diagnostico_ingreso"></textarea>
+				<textarea id="tpl_rp_paciente_diagnostico_ingreso" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -109,7 +109,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">DIAGNÓSTICO EGRESO:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_diagnostico_egreso"></textarea>
+				<textarea id="tpl_rp_paciente_diagnostico_egreso" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -117,7 +117,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">RESULTADO ÉXAMEN:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_resultado_examen"></textarea>
+				<textarea id="tpl_rp_paciente_resultado_examen" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -125,7 +125,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">CIRUGÍA:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_cirugia"></textarea>
+				<textarea id="tpl_rp_paciente_cirugia" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
@@ -133,7 +133,7 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">MÓTIVO CIRUGÍA:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_motivo_cirugia"></textarea>
+				<textarea id="tpl_rp_paciente_motivo_cirugia" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>

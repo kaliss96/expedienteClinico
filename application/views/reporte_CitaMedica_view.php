@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">
 <div class="page-content">
 	<div class="page-header">
-		<h1>Reporte Epicrisiss</h1>
+		<h1>Reporte de Citas Médicas</h1>
 	</div><!-- /.page-header -->
 
 	<div class="row">
@@ -91,12 +91,12 @@
 </div>
 	
 	<script type="text/javascript">
-	  var lista_reporteCitaMedica_Existente = <?php echo json_encode($lista_reporteCitaMedica_Existente) ?>;
-	  console.log(lista_reporteCitaMedica_Existente);
+		var lista_reporteCitaMedica_Existente = <?php echo json_encode($lista_reporteCitaMedica_Existente) ?>;
+		console.log(lista_reporteCitaMedica_Existente);
 
 		$(document).on('ready', function(){
-		$('#grid').DataTable( {
-		"language": {
+			$('#grid').DataTable( {
+				"language": {
 		           "lengthMenu": "Vista _MENU_ Número de páginas",
 		           "info": "Mostrar páginas _PAGE_ de _PAGES_",
 		           "sSearch":         "Buscar:",
@@ -113,14 +113,8 @@
 				    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
 				    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
 		           "infoFiltered": "(filtered from _MAX_ total records)"
-		}
+				}
+			});
 		});
-
-			<?php if(validation_errors()) { ?>
-				$('#ModalEmbarazo').modal("show");
-			<?php } ?>			
-		});
-
-		
   </script>
   <script type="text/javascript" src="<?php echo base_url('assets/js/reporteCitaMedica.js') ?>"></script>

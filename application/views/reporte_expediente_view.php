@@ -127,7 +127,6 @@
 
 		    table.buttons().container()
         	.appendTo( '#example_wrapper .col-sm-6:eq(0)' );
-		});
-		    
+		}); 
 </script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/reporteExpediente.js') ?>"></script>

@@ -2,7 +2,7 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.2.4/css/buttons.dataTables.min.css">
 <div class="page-content">
 	<div class="page-header">
-		<h1>Reporte Epicrisiss</h1>
+		<h1>Reporte Embarazo</h1>
 	</div><!-- /.page-header -->
 
 	<div class="row">
@@ -28,7 +28,7 @@
 					<tr>
 						<th>Fecha Registro</th>
 						<th>Numero Expediente</th>
-						<th>Nombre Pacimiente</th>
+						<th>Nombre Paciente</th>
 						<th>Cedula</th>
 						<th>Problema Embarazo</th>
 						<th>Descripcón</th>
@@ -39,27 +39,27 @@
 				<tbody>	
 
 			<?php foreach ($lista_reporteEmbarazoExistente as $fila) { ?>
-			<tr class="<?php echo $fila->estado == 'INACTIVO' ? 'danger' : '' ?>">
-			<td><?= $fila->fecha_registro;?></td>
-			<td><?php echo $fila->num_expediente;?></td>
-			<td><?php echo $fila->nombre_paciente;?> <?php echo $fila->apellido_paciente;?></td>
-			<td><?php echo $fila->cedula;?></td>
-			<td><?= $fila->problema_embarazo;?></td>
-			<td><?= $fila->descripcion;?></td>
-			<td>
-		  <?php if ($fila->estado == 'ACTIVO') {
-			  echo '<label class="label label-success">activo</label>';
-			}
-			else {
-			  echo '<label class="label label-danger">inactivo</label>';
-			}?>
-		  </td>
-			<td>		
-				<?php if ($fila->estado == 'ACTIVO') {						
-					echo '<button class="active btn btn-primary btn-xs" onclick="VerReporte('. $fila->id .')"><span class="fa fa-chevron-circle-down"></span></button>';
-				}?>
-			</td>
-			</tr>
+				<tr class="<?php echo $fila->estado == 'INACTIVO' ? 'danger' : '' ?>">
+					<td><?= $fila->fecha_registro;?></td>
+					<td><?php echo $fila->num_expediente;?></td>
+					<td><?php echo $fila->nombre_paciente;?> <?php echo $fila->apellido_paciente;?></td>
+					<td><?php echo $fila->cedula;?></td>
+					<td><?= $fila->problema_embarazo;?></td>
+					<td><?= $fila->descripcion;?></td>
+					<td>
+						<?php if ($fila->estado == 'ACTIVO') {
+						  echo '<label class="label label-success">activo</label>';
+						}
+						else {
+						  echo '<label class="label label-danger">inactivo</label>';
+						}?>
+					</td>
+					<td>
+						<?php if ($fila->estado == 'ACTIVO') {
+							echo '<button class="active btn btn-primary btn-xs" onclick="VerReporte('. $fila->id .')"><span class="fa fa-chevron-circle-down"></span></button>';
+						}?>
+					</td>
+				</tr>
 			<?php } ?>
 	  </tbody>
 </table>

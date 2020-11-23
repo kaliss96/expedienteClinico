@@ -309,7 +309,7 @@
 			<td>
 				<div class="form-group">
 					<label for="correo">Correo:</label>
-					<input name="correo" id="txtcorreo" placeholder="Correo" class="form-control" />						
+					<input type="email" name="correo" id="txtcorreo" placeholder="Correo" class="form-control" />						
 				</div>										
 			</td>
 			<td>

@@ -14,64 +14,65 @@
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;"></th>
 			<td style="border:0px; text-align: right">
-				Fecha <span id="tpl_rp_fecha" name="fecha_registro" style="border-bottom: 1px solid black;">2017/04/12</span>			
+				Fecha <span style="border-bottom: 1px solid black;"><?php echo date('d-m-Y');?></span>
+			</td>
+		</tr>
+
+		<tr style="height: 45px; ">
+			<th style="border:0px; text-align: left; width:25%;">NÚMERO FACTURA:</th>
+			<td style="border:0px;">
+				<label id="tpl_rp_paciente_num_expediente" disabled="true"></label>
+				<hr color="black" size="1">
 			</td>
 		</tr>
 
 		<tr style="height: 45px; ">
 			<th style="border:0px; text-align: left; width:25%;">PACIENTE:</th>
 			<td style="border:0px;">
-				<label id="tpl_rp_paciente_nombre"></label>
+				<label id="tpl_rp_paciente_nombre" disabled="true"></label>
 				<hr color="black" size="1">
 			</td>
 		</tr>
 
 		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">NÚMERO EXPEDIENTE:</th>
+			<th style="border:0px; text-align: left; width:25%;">CONTADO:</th>
 			<td style="border:0px;">
-				<label id="tpl_rp_paciente_num_expediente"></label>
+				<label id="tpl_rp_paciente_contado" disabled="true"></label>
 				<hr color="black" size="1">
 			</td>
 		</tr>
 
 		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">CEDULA:</th>
+			<th style="border:0px; text-align: left; width:25%;">ESPECIALIDAD:</th>
 			<td style="border:0px;">
-				<label id="tpl_rp_paciente_cedula"></label>
+				<textarea id="tpl_rp_especialidad_consulta" disabled="true"></textarea>
 				<hr color="black" size="1">
 			</td>
 		</tr>
 
 		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">PROBLEMAS DE EMBARAZO:</th>
+			<th style="border:0px; text-align: left; width:25%;">PRECIO CONSULTA:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_problema_embarazo"></textarea>
+				<label id="tpl_rp_paciente_precio_consulta" disabled="true"></label>
 				<hr color="black" size="1">
 			</td>
 		</tr>
 
 		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">DESCRIPCIÓN:</th>
+			<th style="border:0px; text-align: left; width:25%;">CAMBIO:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_descripcion"></textarea>
+				<label id="tpl_rp_paciente_cambio" disabled="true"></label>
 				<hr color="black" size="1">
 			</td>
 		</tr>
 
 		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">PROBLEMAS DE EMBARAZO:</th>
+			<th style="border:0px; text-align: left; width:25%;">TOTAL:</th>
 			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_problema_embarazo"></textarea>
+				<label id="tpl_rp_paciente_total" disabled="true"></label>
 				<hr color="black" size="1">
 			</td>
 		</tr>
 
-		<tr style="height: 45px; ">
-			<th style="border:0px; text-align: left; width:25%;">DESCRIPCIÓN:</th>
-			<td style="border:0px;">
-				<textarea id="tpl_rp_paciente_descripcion"></textarea>
-				<hr color="black" size="1">
-			</td>
-		</tr>
 	</table>
 
