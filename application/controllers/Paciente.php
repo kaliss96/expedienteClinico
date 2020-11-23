@@ -71,7 +71,6 @@ class Paciente extends CI_Controller {
 		$this->form_validation->set_rules('cedula','Cedula','trim|required');
 		$this->form_validation->set_rules('celular','Celular','trim|required');
 		$this->form_validation->set_rules('telefono','Telefono','trim|required|numeric');
-		$this->form_validation->set_rules('correo','Correo','required|min_length[3]|valid_email|trim');
 		$this->form_validation->set_rules('direccion','Direccion','trim|required');
 		$this->form_validation->set_rules('estado_civil','Estado Civil','trim|required');
 		$this->form_validation->set_rules('tipo_sangre','Tipo de Sangre','trim|required');

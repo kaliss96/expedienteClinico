@@ -85,7 +85,7 @@ class Formulario extends CI_Controller {
 			$this->cargarVistaDatos();
 		} 
 		else{
-			$resultado = $this->formulario_model->cambiarEstado(
+			$resultado = $this->Formulario_model->cambiarEstado(
 				(int) $this->input->post('estado_formulario_id'), 
 				(int) $this->input->post('cambio_estado')
 			);
